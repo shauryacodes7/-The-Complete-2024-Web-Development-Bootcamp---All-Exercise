@@ -1,14 +1,39 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="practice.css" />
+    <title>Overflow Example</title>
+    <style>
+      .overflow-auto {
+        width: 200px;
+        height: 100px;
+        background-color: lightcoral;
+        overflow: auto;
+      }
+
+      .overflow-hidden {
+        width: 200px;
+        height: 100px;
+        background-color: lightseagreen;
+        overflow: inherit;
+      }
+    </style>
   </head>
   <body>
-    <label class="switch">
-      <input type="checkbox" />
-      <span class="slider"></span>
-    </label>
+    <div class="overflow-auto">
+      This div has a lot of content and will show scrollbars if the content
+      overflows. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+      non urna vitae lacus.
+    </div>
+
+    <div class="overflow-hidden">
+      This div has a lot of content but the overflow is hidden. Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae lacus.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+      inventore nesciunt voluptas! Labore exercitationem soluta doloremque, aut
+      eum iusto vel? Possimus iste animi ipsam accusantium distinctio aspernatur
+      soluta deleniti eaque!
+    </div>
   </body>
 </html>
