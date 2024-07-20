@@ -3,37 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Overflow Example</title>
+    <title>Document</title>
     <style>
-      .overflow-auto {
-        width: 200px;
-        height: 100px;
-        background-color: lightcoral;
-        overflow: auto;
+      body {
+        overflow: scroll;
+      }
+      .container {
+        background-color: rgb(195, 202, 202);
+        border: 5px solid black;
+
+        height: 700px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        align-items: start;
+        justify-content: start;
+        align-content: start;
+      }
+      .box {
+        /* height: 100px; */
+        width: 150px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 100px;
+        border: 2px solid brown;
+        margin: 5px;
+        padding: 2px;
       }
 
-      .overflow-hidden {
-        width: 200px;
-        height: 100px;
-        background-color: lightseagreen;
-        overflow: inherit;
+      .box1 {
+        flex: 1000px, 1, 200px;
+      }
+
+      #box2 {
+        background-color: aqua;
+      }
+
+      #box3 {
+        background-color: blue;
+      }
+
+      #box4 {
+        background-color: orange;
+      }
+
+      #box5 {
+        background-color: brown;
+      }
+
+      #box6 {
+        background-color: violet;
+      }
+
+      #box7 {
+        background-color: aquamarine;
+      }
+
+      #box8 {
+        background-color: tomato;
+      }
+
+      #box9 {
+        background-color: teal;
       }
     </style>
   </head>
   <body>
-    <div class="overflow-auto">
-      This div has a lot of content and will show scrollbars if the content
-      overflows. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-      non urna vitae lacus.
-    </div>
-
-    <div class="overflow-hidden">
-      This div has a lot of content but the overflow is hidden. Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae lacus.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-      inventore nesciunt voluptas! Labore exercitationem soluta doloremque, aut
-      eum iusto vel? Possimus iste animi ipsam accusantium distinctio aspernatur
-      soluta deleniti eaque!
+    <div class="container">
+      <div class="box" id="box1" style="flex: 1 1 200px">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">3</div>
+      <div class="box" id="box4">4</div>
+      <div class="box" id="box5">5</div>
+      <div class="box" id="box6">6</div>
+      <div class="box" id="box7">7</div>
+      <div class="box" id="box8">8</div>
+      <div class="box" id="box9">9</div>
     </div>
   </body>
 </html>
