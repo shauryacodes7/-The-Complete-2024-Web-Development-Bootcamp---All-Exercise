@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: antiquewhite;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  background-color: rgb(157, 60, 60);
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  background-color: grey;
+}
+
+.box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  color: wheat;
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  transition: transform 3s ease;
+  animation-iteration-count: infinite;
+
+  border: 2px solid red;
+}
+
+.box1:hover {
+  background-color: red;
+  color: wheat;
+  transform: translate(95vw) rotate(360deg);
+}
+
+.box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  color: wheat;
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  border: 2px solid red;
+
+  animation-name: leo;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  /* animation-direction: normal;
+  animation-fill-mode: both; */
+}
+
+@keyframes leo {
+  from {
+    width: 0vw;
+  }
+
+  to {
+    width: 100vw;
+  }
+}
